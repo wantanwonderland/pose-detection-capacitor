@@ -1,5 +1,3 @@
-Creating a `README.md` file for your Ionic Capacitor project helps users understand how to install, run, and contribute to your application. Below is a sample `README.md` that you can customize as per your project's needs.
-
 ```markdown
 # Pose Detection App with MoveNet
 
