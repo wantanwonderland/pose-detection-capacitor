@@ -1,27 +1,75 @@
-#container {
-  text-align: center;
+/* movnet-detection.component.css */
 
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
-}
-
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
   margin: 0;
+  padding: 0;
 }
 
-#container a {
-  text-decoration: none;
+.container {
+  max-width: 800px; /* Limit the maximum width of the container */
+  margin: 0 auto; /* Center the container */
+  padding: 20px;
+  text-align: center; /* Center text */
+  background-color: white; /* White background for the container */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+h1 {
+  font-size: 2em; /* Larger font size for the heading */
+  color: #333; /* Darker text color */
+  margin-bottom: 20px; /* Space below the heading */
+}
+
+.controls {
+  margin-bottom: 20px; /* Space below the controls */
+}
+
+.button {
+  background-color: #007bff; /* Bootstrap blue */
+  color: white; /* White text */
+  border: none; /* No border */
+  padding: 10px 15px; /* Padding for buttons */
+  margin: 5px; /* Space between buttons */
+  border-radius: 5px; /* Rounded corners on buttons */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Smooth background transition */
+}
+
+.button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.toggle-label {
+  font-weight: bold; /* Bold text for the toggle label */
+}
+
+.video-container {
+  position: relative; /* Position relative for canvas */
+  display: inline-block; /* Align video and canvas side by side */
+}
+
+video {
+  width: 100%; /* Make the video responsive */
+  height: auto; /* Maintain aspect ratio */
+  border: 2px solid #007bff; /* Border around video */
+  border-radius: 8px; /* Rounded corners */
+}
+
+canvas {
+  position: absolute; /* Position canvas over video */
+  top: 0; /* Align top */
+  left: 0; /* Align left */
+  width: 100%; /* Match video width */
+  height: auto; /* Maintain aspect ratio */
+  pointer-events: none; /* Prevent interaction with the canvas */
+  border-radius: 8px; /* Rounded corners */
+}
+
+.error-message {
+  color: red; /* Red text for errors */
+  font-weight: bold; /* Bold text for emphasis */
+  margin-top: 20px; /* Space above error message */
 }
